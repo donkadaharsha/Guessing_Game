@@ -7,9 +7,9 @@
 
 # it generates a random integer at the beginning of the program in the Server side. This shall implement the 2 rpc calls defined in proto 
 # it checks if the guess provided by client is greater than or less than or equal to the number that server generated. Based on the guess value and comparision, it will return the message to client giving indication as 
-#low - if guess is lower than server generated number
-#high- if guess is grester than server generated number
-#You won the game - iF it is equal to the server generated number.
+# low - if guess is lower than server generated number
+# high- if guess is grester than server generated number
+# You won the game - iF it is equal to the server generated number.
 # If one client receives "you won the game", it then prints "I am done" and will exit the game silently while the another client continues
 # to guess.
 # when the second client also guesses the number, it will print "You won the game" then "I am done" and the program will terminate.
