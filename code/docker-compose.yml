@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  server:
+    build: 
+      context: .
+      dockerfile: Server/Dockerfile
+    hostname: server
+    container_name: Server
+    networks:
+      - default
+  client1:
+    build: 
+      context: .
+      dockerfile: Alice/Dockerfile
+    hostname: alice
+    container_name: Alice
+    networks:
+      - default
+  client2:
+    build: 
+      context: .
+      dockerfile: Bob/Dockerfile
+    hostname: bob
+    container_name: Bob
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

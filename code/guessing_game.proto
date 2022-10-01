@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package guessing_game;
+
+
+service GuessingGame { // service ran on the server
+  rpc Reply(Guess) returns (Feedback) {}
+  rpc tell_name (Name) returns (Name) {}
+}
+
+message Guess {
+  int32 number = 1;
+}
+
+message Feedback {
+  string message = 1;
+}
+
+message Name {
+  string message = 1;
+}
