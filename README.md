@@ -12,8 +12,8 @@
 #You won the game - iF it is equal to the server generated number.
 # If one client receives "you won the game", it then prints "I am done" and will exit the game silently while the another client continues
 # to guess.
-#when the second client also guesses the number, it will print "You won the game" then "I am done" and the program will terminate.
-#Bugs- Sometimes client exits with error code 139. 
+# when the second client also guesses the number, it will print "You won the game" then "I am done" and the program will terminate.
+# Bugs- Sometimes client exits with error code 139. 
 
 # Gif link of running application:
 
